@@ -1,11 +1,10 @@
 import React from 'react';
 import { StyledArrowButton } from './ArrowButtonStyles';
 
-type Props = {}
 
-const ArrowButton = (props: Props) => {
+const ArrowButton = () => {
   return (
-    <StyledArrowButton>StyledArrowButton</StyledArrowButton>
+    <StyledArrowButton>StyledArrowButton</StyledArrowButton >
   )
 }
 
