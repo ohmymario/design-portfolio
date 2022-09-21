@@ -3,12 +3,17 @@ import { StyledArrowButton } from './ArrowButtonStyles';
 import RightArrow from '../../assets/icon-arrow-right.svg'
 import LeftArrow from '../../assets/icon-arrow-left.svg'
 
-const ArrowButton = () => {
-  return (
-    <StyledArrowButton>
-      <img src={RightArrow} alt="Right Arrow" />
-    </StyledArrowButton>
-  )
+type ArrowProps = {
+  direction: string;
 }
 
-export default ArrowButton
+const ArrowButton = (props: ArrowProps) => {
+  const { direction } = props;
+  return (
+    <StyledArrowButton direction={direction}>
+      {direction === 'right' ? <img src={RightArrow} alt="Move Right" /> : <img src={LeftArrow} alt="Move Left" />}
+    </StyledArrowButton>
+  )
+};
+
+export default ArrowButton;
