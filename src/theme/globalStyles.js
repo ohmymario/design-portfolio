@@ -27,7 +27,7 @@ const GlobalStyle = createGlobalStyle`
   body {
     margin: 0;
     padding: 0;
-    background: var(--highlight-color);
+    background: var(--light-cream);
     font-family: var(--font-family);
   }
 
