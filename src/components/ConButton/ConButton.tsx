@@ -1,11 +1,21 @@
 import React from "react";
 import { StyledConButton } from "./ConButtonStyles";
 
-type Props = {};
+type ConProps = {
+  primary: boolean;
+  children?: React.ReactNode;
+} & typeof defaultProps;
 
-const ConButton = (props: Props) => {
-  return <StyledConButton>ConButton</StyledConButton>;
+const defaultProps = {
+  primary: true,
 };
+
+const ConButton = (props: ConProps) => {
+  const { primary, children } = props;
+  return <StyledConButton primary={primary}>{children}</StyledConButton>;
+};
+
+ConButton.defaultProps = defaultProps;
 
 export default ConButton;
 
