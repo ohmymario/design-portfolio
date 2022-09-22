@@ -14,6 +14,8 @@ const GlobalStyle = createGlobalStyle`
     --cyan: #61C4B7;
     --dark-purple: #552049;
     --font-family: 'Plus Jakarta Sans', sans-serif;
+
+    --max-width: 1110px;
   }
 
   html {
