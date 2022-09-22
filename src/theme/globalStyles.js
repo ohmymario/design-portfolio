@@ -39,6 +39,7 @@ const GlobalStyle = createGlobalStyle`
     font-size: 3.5rem; // 56px
     line-height: 70px;
     color: var(--black);
+    margin: 0;
   }
 
   h2 {
@@ -47,6 +48,7 @@ const GlobalStyle = createGlobalStyle`
     font-size: 2.5rem; // 40px
     line-height: 51px;
     color: var(--black);
+    margin: 0;
   }
 
   h3 {
@@ -55,6 +57,7 @@ const GlobalStyle = createGlobalStyle`
     font-size: 2rem; // 32px
     line-height: 40px;
     color: var(--black);
+    margin: 0;
   }
 
   p {
@@ -63,6 +66,7 @@ const GlobalStyle = createGlobalStyle`
     font-size: 18px; // 18px
     line-height: 28px;
     color: var(--medium-brown);
+    margin: 0;
   }
 
 
