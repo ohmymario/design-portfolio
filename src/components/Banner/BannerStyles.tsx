@@ -7,6 +7,7 @@ export const BannerContainer = styled.div`
   align-items: center;
   text-align: center;
   max-width: var(--maxWidth);
+  margin-bottom: 5rem;
 
   h1 {
     margin-bottom: 20px;
