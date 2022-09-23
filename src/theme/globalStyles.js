@@ -60,6 +60,15 @@ const GlobalStyle = createGlobalStyle`
     margin: 0;
   }
 
+  h4 {
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 1.5rem; // 24px
+    line-height: 30px;
+    color: #FFFFFF;
+    margin: 0;
+  }
+
   p {
     font-family: var(--font-family);
     font-weight: 400;
