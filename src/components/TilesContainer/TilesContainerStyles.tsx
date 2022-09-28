@@ -2,7 +2,11 @@ import styled from "styled-components";
 
 export const TilesWrapper = styled.div`
 
-  max-width: var(--maxWidth);
+  //1110 px x 364px
+
+  max-width: var(--max-width);
+  width: 100%;
+  height: 364px;
 
   display: grid;
   /* margin: 0 auto; */
@@ -11,8 +15,8 @@ export const TilesWrapper = styled.div`
   align-content: space-evenly;
   align-items: center;
 
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: 1fr 1fr;
   grid-gap: 1.5rem;
 
-  `;
+`;
