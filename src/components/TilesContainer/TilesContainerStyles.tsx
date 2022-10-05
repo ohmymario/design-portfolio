@@ -19,4 +19,6 @@ export const TilesWrapper = styled.div`
   grid-template-rows: 1fr 1fr;
   grid-gap: 1.5rem;
 
+  margin-bottom: 8.5rem;
+
 `;
