@@ -71,7 +71,7 @@ const GlobalStyle = createGlobalStyle`
 
   p {
     font-family: var(--font-family);
-    font-weight: 400;
+    font-weight: 500;
     font-size: 18px; // 18px
     line-height: 28px;
     color: var(--medium-brown);
