@@ -2,6 +2,7 @@ import React from 'react';
 import Header from '../components/Header/Header';
 import Banner from '../components/Banner/Banner';
 import TilesContainer from '../components/TilesContainer/TilesContainer';
+import ClientContainer from '../components/ClientContainer/ClientContainer';
 
 import { LayoutStyles } from './LayoutStyles';
 
@@ -13,6 +14,7 @@ const Layout = (props: Props) => {
       <Header />
       <Banner />
       <TilesContainer />
+      <ClientContainer />
     </LayoutStyles>
   )
 }
