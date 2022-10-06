@@ -3,6 +3,7 @@ import Header from '../components/Header/Header';
 import Banner from '../components/Banner/Banner';
 import TilesContainer from '../components/TilesContainer/TilesContainer';
 import ClientContainer from '../components/ClientContainer/ClientContainer';
+import WorkSlides from '../components/WorkSlides/WorkSlides';
 
 import { LayoutStyles } from './LayoutStyles';
 
@@ -15,6 +16,7 @@ const Layout = (props: Props) => {
       <Banner />
       <TilesContainer />
       <ClientContainer />
+      <WorkSlides />
     </LayoutStyles>
   )
 }
