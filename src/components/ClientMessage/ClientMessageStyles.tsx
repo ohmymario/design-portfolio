@@ -2,17 +2,14 @@ import styled from 'styled-components';
 
 
 export const StyledClientMessage = styled.div`
-//540 x 306
+   max-width: 540px;
 
-  width: 540px;
-  height: 306px;
-
-  h1 {
-
+  h2 {
+    margin-bottom: 2.125rem;
   }
 
   p {
-
+    margin-bottom: 2rem;
   }
 
 
