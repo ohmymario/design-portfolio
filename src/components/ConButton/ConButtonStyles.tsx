@@ -17,5 +17,6 @@ export const StyledConButton = styled.button<Props>`
   transition: all 0.2s ease-in-out;
   :hover {
     background: ${props => props.primary ? "var(--galactic-blue)" : "var(--summer-yellow)"};
+    cursor: pointer;
   }
 `
