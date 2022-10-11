@@ -18,9 +18,9 @@ export const WorkSlidesImages = styled.div`
 
   img {
     display: block;
+    border-radius: 10px;
     &:hover {
       cursor: pointer;
-      border: 1px solid red;
     }
   }
 
@@ -28,5 +28,4 @@ export const WorkSlidesImages = styled.div`
 `;
 
 export const WorkSlidesButtons = styled.div`
-  border: 1px solid red;
 `;
