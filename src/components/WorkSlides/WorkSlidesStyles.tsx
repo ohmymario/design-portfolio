@@ -14,6 +14,7 @@ export const WorkSlidesHeader = styled.h3`
 export const WorkSlidesImages = styled.div`
   margin-bottom: 3.5rem;
   display: flex;
+  gap: 1.875rem;
 
   img {
     display: block;
