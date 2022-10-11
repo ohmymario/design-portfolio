@@ -13,6 +13,7 @@ export const StyledConButton = styled.button<Props>`
   border-radius: 28px;
   border: none;
   padding: 14px 46px;
+  white-space: nowrap;
   transition: all 0.2s ease-in-out;
   :hover {
     background: ${props => props.primary ? "var(--galactic-blue)" : "var(--summer-yellow)"};
