@@ -17,6 +17,7 @@ export const StyledArrowButton = styled.button<Props>`
   :hover {
     background: var(--galactic-blue);
     border: var(--galactic-blue);
+    cursor: pointer;
   }
 
 `;
