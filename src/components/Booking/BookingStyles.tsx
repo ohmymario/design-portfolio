@@ -5,8 +5,8 @@ export const BookingContainer = styled.div`
   justify-content: space-between;
   max-width: var(--max-width);
   width: 100%;
-
   padding: 5rem 4rem;
+  margin-bottom: 56px;
   background-color: var(--black);
   border-radius: 10px;
   align-items: center;
