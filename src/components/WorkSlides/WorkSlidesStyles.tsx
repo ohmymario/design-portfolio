@@ -5,6 +5,7 @@ export const WorkSlidesContainer = styled.section`
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  margin-bottom: 5.5rem;
 `;
 
 export const WorkSlidesHeader = styled.h3`
