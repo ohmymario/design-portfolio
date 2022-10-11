@@ -6,7 +6,16 @@ import slide3 from '../../assets/image-slide-3.jpg'
 import slide4 from '../../assets/image-slide-4.jpg'
 import slide5 from '../../assets/image-slide-5.jpg'
 
+import ArrowButton from '../ArrowButton/ArrowButton';
+
+import {
+  WorkSlidesContainer, WorkSlidesHeader,
+  WorkSlidesImages, WorkSlidesButtons
+} from './WorkSlidesStyles';
+
 type Props = {}
+
+
 
 const images = [
   {
@@ -33,27 +42,27 @@ const images = [
 
 const WorkSlides = (props: Props) => {
   return (
-    <div>
+    <WorkSlidesContainer>
 
       {/* header */}
-      <h3>My Work</h3>
+      <WorkSlidesHeader>My Work</WorkSlidesHeader>
 
       {/* image slides */}
       {/* total images - 5 */}
-      <div>
+      <WorkSlidesImages>
         {images.map((image, index) => (
           <img key={index} src={image.src} alt={image.alt} />
         ))}
-      </div>
+      </WorkSlidesImages>
 
       {/* buttons */}
       {/* buttons center */}
-      <div>
-        <button>Left</button>
-        <button>Right</button>
-      </div>
+      <WorkSlidesButtons>
+        <ArrowButton direction="left" />
+        <ArrowButton direction="right" />
+      </WorkSlidesButtons>
 
-    </div>
+    </WorkSlidesContainer>
   )
 }
 
