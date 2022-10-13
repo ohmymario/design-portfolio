@@ -1,17 +1,14 @@
 import React from 'react';
 import { HeaderContainer } from './HeaderStyles';
 import ConButton from '../ConButton/ConButton';
-import Logo from '../../assets/logo.svg';
+import Logo from '../Logo/Logo';
+
 
 const Header = () => {
   return (
     <HeaderContainer>
-      <div>
-        <a href="#homepage">
-          <img src={Logo} alt="Company Logo" />
-        </a>
-        <ConButton>Free Consultation</ConButton>
-      </div>
+      <Logo />
+      <ConButton>Free Consultation</ConButton>
     </HeaderContainer>
   )
 }
