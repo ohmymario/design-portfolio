@@ -3,7 +3,7 @@ import { StyledConButton } from "./ConButtonStyles";
 
 type ConProps = {
   primary: boolean;
-  children?: React.ReactNode;
+  children: React.ReactNode;
 } & typeof defaultProps;
 
 const defaultProps = {
