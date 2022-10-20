@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useRef } from 'react'
 
 import slide1 from '../../assets/image-slide-1.jpg'
 import slide2 from '../../assets/image-slide-2.jpg'
@@ -6,7 +6,7 @@ import slide3 from '../../assets/image-slide-3.jpg'
 import slide4 from '../../assets/image-slide-4.jpg'
 import slide5 from '../../assets/image-slide-5.jpg'
 
-import ArrowButton from '../ArrowButton/ArrowButton';
+import ArrowButtonContainer from '../ArrowButtonContainer/ArrowButtonContainer';
 
 import {
   WorkSlidesContainer, WorkSlidesHeader,
@@ -15,9 +15,7 @@ import {
 
 type Props = {}
 
-
-
-const images = [
+const images: { src: string, alt: string }[] = [
   {
     src: slide1,
     alt: 'slide 1',
@@ -41,28 +39,31 @@ const images = [
 ]
 
 const WorkSlides = (props: Props) => {
+
+  const imagesRef = useRef<HTMLDivElement>(null);
+
+  const sideScroll = (scrollOffset: number) => {
+    if (imagesRef.current != null) {
+      imagesRef.current.scrollLeft += scrollOffset;
+    }
+  };
+
   return (
     <WorkSlidesContainer>
 
-      {/* header */}
       <WorkSlidesHeader>My Work</WorkSlidesHeader>
 
-      {/* image slides */}
-      {/* total images - 5 */}
-      <WorkSlidesImages>
+      <WorkSlidesImages ref={imagesRef}>
         {images.map((image, index) => (
           <img key={index} src={image.src} alt={image.alt} />
         ))}
       </WorkSlidesImages>
 
-      {/* buttons */}
-      {/* buttons center */}
       <WorkSlidesButtons>
-        <ArrowButton direction="left" />
-        <ArrowButton direction="right" />
+        <ArrowButtonContainer sideScroll={sideScroll} />
       </WorkSlidesButtons>
 
-    </WorkSlidesContainer>
+    </WorkSlidesContainer >
   )
 }
 
