@@ -1,15 +1,11 @@
 import styled from "styled-components";
 
 export const TilesWrapper = styled.div`
-
-  //1110 px x 364px
-
   max-width: var(--max-width);
   width: 100%;
   height: 364px;
 
   display: grid;
-  /* margin: 0 auto; */
   justify-content: space-evenly;
   justify-items: center;
   align-content: space-evenly;
