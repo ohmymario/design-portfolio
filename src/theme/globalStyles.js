@@ -40,6 +40,11 @@ const GlobalStyle = createGlobalStyle`
     line-height: 70px;
     color: var(--black);
     margin: 0;
+
+    @media only screen and (max-width: 840px) {
+       font-size: 2.75rem; // 44px
+       line-height: 55px;
+     }
   }
 
   h2 {
