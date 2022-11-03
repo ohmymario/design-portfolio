@@ -8,6 +8,12 @@ export const WorkSlidesContainer = styled.section`
   align-items: center;
   justify-content: center;
   margin-bottom: 5.5rem;
+
+
+  @media screen and (max-width: 1050px) {
+    margin-bottom: 7.5rem;
+  }
+
   `;
 
 export const WorkSlidesHeader = styled.h3`
