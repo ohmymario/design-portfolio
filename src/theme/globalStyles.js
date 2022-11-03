@@ -54,6 +54,12 @@ const GlobalStyle = createGlobalStyle`
     line-height: 51px;
     color: var(--black);
     margin: 0;
+
+    @media only screen and (max-width: 950px) {
+      font-size: 2.5rem; // 32px
+      line-height: 40px;
+     }
+
   }
 
   h3 {
