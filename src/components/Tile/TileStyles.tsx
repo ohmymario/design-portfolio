@@ -2,6 +2,7 @@ import styled from 'styled-components';
 
 interface Props {
   size: string,
+  color: string,
 };
 
 export const TileContainer = styled.div<Props>`
@@ -12,7 +13,7 @@ export const TileContainer = styled.div<Props>`
   padding: 24px;
   border-radius: 8px;
   font-size: 24px;
-  background: var(--galactic-blue);
+  background: var(--${props => props.color});
 
   width: 100%;
   height: 100%;
