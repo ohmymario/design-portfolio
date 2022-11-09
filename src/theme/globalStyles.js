@@ -56,7 +56,7 @@ const GlobalStyle = createGlobalStyle`
     margin: 0;
 
     @media only screen and (max-width: 950px) {
-      font-size: 2.5rem; // 32px
+      font-size: 2rem; // 32px
       line-height: 40px;
      }
 
@@ -83,7 +83,7 @@ const GlobalStyle = createGlobalStyle`
   p {
     font-family: var(--font-family);
     font-weight: 500;
-    font-size: 18px; // 18px
+    font-size: 1.125rem; // 18px
     line-height: 28px;
     color: var(--medium-brown);
     margin: 0;
