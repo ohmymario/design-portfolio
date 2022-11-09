@@ -8,13 +8,24 @@ import clientImage from '../../assets/image-amy.webp'
 type ClientProps = {
 }
 
-const data = {
+type ClientDataProps = {
+  intro: string,
+  message: string,
+  primary: boolean
+}
+
+type ClientImageProps = {
+  src: string,
+  alt: string
+}
+
+const data: ClientDataProps = {
   intro: "I’m Amy, and I’d love to work on your next project",
   message: "I love working with others to create beautiful design solutions. I’ve designed everything from brand illustrations to complete mobile apps. I’m also handy with a camera!",
   primary: false,
 }
 
-const imageData = {
+const imageData: ClientImageProps = {
   src: clientImage,
   alt: "a picture of amy",
 }
