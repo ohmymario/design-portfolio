@@ -18,7 +18,6 @@ export const WorkSlidesContainer = styled.section`
 
 export const WorkSlidesHeader = styled.h3`
   margin-bottom: 3.5rem;
-  border-bottom: 1px solid red;
   `;
 
 export const WorkSlidesImages = styled.div`
@@ -38,7 +37,6 @@ export const WorkSlidesImages = styled.div`
   }
 
   img {
-    border: 2px solid red;
     display: inline-block;
     border-radius: 10px;
     &:hover {
