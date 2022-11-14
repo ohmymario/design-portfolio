@@ -45,6 +45,12 @@ const GlobalStyle = createGlobalStyle`
        font-size: 2.75rem; // 44px
        line-height: 55px;
      }
+
+    @media only screen and (max-width: 650px) {
+        font-size: 2.25rem; // 36px
+        line-height: 45px;
+    }
+
   }
 
   h2 {
@@ -87,6 +93,11 @@ const GlobalStyle = createGlobalStyle`
     line-height: 28px;
     color: var(--medium-brown);
     margin: 0;
+
+    @media only screen and (max-width: 650px) {
+      font-size: 1rem; // 16px
+      line-height: 26px;
+    }
   }
 
 
