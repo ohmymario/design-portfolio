@@ -1,5 +1,5 @@
 import React from 'react'
-import { BookingContainer, BookingText, BookingButton } from './BookingStyles'
+import { BookingContainer, BookingText, BookingButton, BookingBackground } from './BookingStyles'
 import ConButton from '../ConButton/ConButton'
 
 type Props = {}
@@ -16,14 +16,18 @@ const Booking = (props: Props) => {
 
   return (
     <BookingContainer>
-      <BookingText>
-        <h2>{title}</h2>
-        <p>{text}</p>
-      </BookingText>
+      <BookingBackground>
 
-      <BookingButton>
-        <ConButton primary={primary}>Free Consultation</ConButton>
-      </BookingButton>
+        <BookingText>
+          <h2>{title}</h2>
+          <p>{text}</p>
+        </BookingText>
+
+        <BookingButton>
+          <ConButton primary={primary}>Free Consultation</ConButton>
+        </BookingButton>
+
+      </BookingBackground>
     </BookingContainer>
 
   )
