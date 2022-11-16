@@ -21,6 +21,8 @@ export const StyledClientContainer = styled.div`
     gap: 2.5rem;
     margin-bottom: 6.25rem;
 
+    padding: 0 1rem;
+
     flex-direction: column;
 
     > * {

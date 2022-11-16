@@ -7,17 +7,16 @@ export const StyledClientMessage = styled.div`
   h2 {
     margin-bottom: 2.125rem;
 
-    @media screen and (max-width: 650px) {
+    @media screen and (max-width: 1050px) {
       margin-bottom: 1.5rem;
-
     }
+
   }
 
   p {
     margin-bottom: 2rem;
 
-    @media screen and (max-width: 650px) {
-
+    @media screen and (max-width: 1050px) {
       margin-bottom: 1.5rem;
     }
 
