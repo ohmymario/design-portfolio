@@ -47,9 +47,9 @@ const GlobalStyle = createGlobalStyle`
      }
 
     @media only screen and (max-width: 650px) {
-        font-size: 2.25rem; // 36px
-        line-height: 45px;
-    }
+      font-size: 2.25rem; // 36px
+      line-height: 45px;
+  }
 
   }
 
@@ -64,7 +64,12 @@ const GlobalStyle = createGlobalStyle`
     @media only screen and (max-width: 950px) {
       font-size: 2rem; // 32px
       line-height: 40px;
-     }
+    }
+
+    @media only screen and (max-width: 650px) {
+      font-size: 26px; // 26px
+      line-height: 33px;
+    }
 
   }
 
