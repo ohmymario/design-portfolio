@@ -5,6 +5,7 @@ export const StyledClientImage = styled.img`
   height: 445px;
   border-radius: 50%;
 
+
   @media screen and (max-width: 1050px) {
     width: 364px;
     height: 364px;

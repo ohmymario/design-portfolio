@@ -16,4 +16,16 @@ export const StyledClientContainer = styled.div`
     margin-bottom: 7.5rem;
   }
 
+  @media screen and (max-width: 850px) {
+    transform: translateX(0);
+    gap: 2.5rem;
+    margin-bottom: 6.25rem;
+
+    flex-direction: column;
+
+    > * {
+      text-align: center;
+    }
+  }
+
 `
