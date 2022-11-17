@@ -21,6 +21,11 @@ export const WorkSlidesContainer = styled.section`
 
 export const WorkSlidesHeader = styled.h3`
   margin-bottom: 3.5rem;
+
+  @media screen and (max-width: 650px) {
+    margin-bottom: 2rem;
+  }
+
   `;
 
 export const WorkSlidesImages = styled.div`
