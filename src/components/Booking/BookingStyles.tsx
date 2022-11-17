@@ -4,9 +4,15 @@ export const BookingContainer = styled.div`
   width: 100%;
   display: flex;
   max-width: var(--max-width);
+  margin-bottom: 3.5rem;
 
   @media screen and (max-width: 1050px) {
-    padding: 0 40px;
+    padding: 0 2.5rem;
+  }
+
+  @media screen and (max-width: 650px) {
+    margin-bottom: 40px;
+    padding: 0 15px;
   }
 
 `;
@@ -16,7 +22,6 @@ export const BookingBackground = styled.div`
   justify-content: space-between;
   width: 100%;
   padding: 5rem 4rem;
-  margin-bottom: 56px;
   background-color: var(--black);
   border-radius: 10px;
   align-items: center;
@@ -34,6 +39,11 @@ export const BookingBackground = styled.div`
     padding: 3.5rem 4.6875rem 4rem 4.6875rem;
     gap: 1.625rem;
   }
+
+  @media screen and (max-width: 650px) {
+    padding: 49px 24px 48px 24px;
+  }
+
 
 `;
 
