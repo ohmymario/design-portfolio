@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react'
+import React, { useRef } from 'react'
 
 import slide1 from '../../assets/image-slide-1.jpg'
 import slide2 from '../../assets/image-slide-2.jpg'
